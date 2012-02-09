@@ -17,11 +17,6 @@ class db {
 
 	# execute a query
 	function query($query_string) {
-		//if ($_SESSION["admin_mode"] == true) {
-		//	echo "<pre>";
-		//	print_r($query_string);	
-		//	echo "</pre>";	
-		//}
 		$result = mysql_query($query_string) or die(mysql_error() . "<!-- ".$query_string." -->");
 		$this->query_count++;
 		$this->query_history[] = $query_string;
