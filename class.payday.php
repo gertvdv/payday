@@ -24,4 +24,12 @@ class payday {
 		$this->transactions = array("blabla");
 	}
 	
+	function add_transaction() {
+		
+	}
+	
+	function delete_transaction($id) {
+		
+	}
+	
 }
